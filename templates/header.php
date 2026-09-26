@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Blank</title>
+    <title>Buku Tamu</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -64,7 +64,7 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="user.php">
+                <a class="nav-link" href="users.php">
                     <i class="fas fa-fw fa-users"></i>
                     <span>User</span></a>
             </li>
