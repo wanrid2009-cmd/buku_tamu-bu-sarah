@@ -1,7 +1,7 @@
 <?php
 
 require_once('function.php');
-
+require_once('koneksi.php');
 include_once('templates/header.php');
 
 ?>
@@ -140,7 +140,7 @@ include_once('templates/header.php');
 
                                         <a onclick="confirm('Apakah Anda yakin ingin menghapus data ini?');" class="btn btn-danger"
 
-                                            href="hapus.php?id=<?= $tamu['id_tamu'] ?>">Hapus</a>
+                                            href="hapus-tamu.php?id=<?= $tamu['id_tamu'] ?>">Hapus</a>
 
                                     </td>
 
