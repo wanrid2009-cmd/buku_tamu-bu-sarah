@@ -104,7 +104,7 @@ include_once('templates/header.php');
                                     <td><?= $user['user_role'] ?></td>
                                     <td>
 
-                                        <a class="btn btn-success" href="edit-users.php?id=<?= $user['id_user'] ?>">Ubah</a>
+                                        <a class="btn btn-success" href="edit-user.php?id=<?= $user['id_user'] ?>">Ubah</a>
 
                                         <a onclick="confirm('Apakah Anda yakin ingin menghapus data ini?');" class="btn btn-danger"
 
