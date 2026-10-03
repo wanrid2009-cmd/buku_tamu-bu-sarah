@@ -108,7 +108,7 @@ include_once('templates/header.php');
 
                                         <a onclick="confirm('Apakah Anda yakin ingin menghapus data ini?');" class="btn btn-danger"
 
-                                            href="hapus-users.php?id=<?= $user['id_user'] ?>">Hapus</a>
+                                            href="hapus-user.php?id=<?= $user['id_user'] ?>">Hapus</a>
 
                                     </td>
 
