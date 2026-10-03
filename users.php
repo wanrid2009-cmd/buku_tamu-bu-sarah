@@ -110,7 +110,7 @@ include_once('templates/header.php');
                                     <td><?= $user['username'] ?></td>
                                     <td><?= $user['user_role'] ?></td>
                                     <td>
-                                        <button type="button" class="btn btn-icon-split" data-toggle="modal" data-target="#gantiPassword" data-id="<?= $user['id_user'] ?>">
+                                        <button type="button" class="btn btn-primary btn-icon-split" data-toggle="modal" data-target="#gantiPassword" data-id="<?= $user['id_user'] ?>">
                                             <span class="text">Ganti Password</span>
                                         </button>
                                         <a class="btn btn-success" href="edit-user.php?id=<?= $user['id_user'] ?>">Ubah</a>
