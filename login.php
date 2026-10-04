@@ -1,6 +1,15 @@
 <?php
 require 'koneksi.php';
 
+// memulai session
+session_start();
+
+// cek bila ada user yang sudah login maka akan redirect ke halaman dashboard
+if (isset($_SESSION['login'])) {
+    header('Location: index.php');
+    exit;
+}
+
 if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -10,10 +19,15 @@ if (isset($_POST['login'])) {
     // cek apakah ada username
     if (mysqli_num_rows($result) === 1) {
 
-        // cek apakah passwordnya benar
+        // ambil data user
         $row = mysqli_fetch_assoc($result);
 
+        // cek apakah passwordnya benar
         if (password_verify($password, $row['password'])) {
+
+            // set session
+            $_SESSION['login'] = true;
+            $_SESSION['username'] = $username;
 
             // login berhasil
             header("Location: index.php");
