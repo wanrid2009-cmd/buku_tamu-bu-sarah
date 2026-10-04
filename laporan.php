@@ -1,5 +1,6 @@
 <?php
 include_once('templates/header.php');
+require_once('function.php');
 ?>
 
 <!-- Begin Page Content -->
@@ -69,7 +70,6 @@ include_once('templates/header.php');
                     </tr>
                 </thead>
                 <tbody>
-                <tbody>
                     <?php
                     if (isset($_POST['tampilkan'])) {
                         $p_awal = $_POST['p_awal'];
@@ -96,7 +96,6 @@ include_once('templates/header.php');
                     <?php endforeach;
                     }
                     ?>
-                </tbody>
                 </tbody>
             </table>
         </div>
