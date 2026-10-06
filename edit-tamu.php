@@ -39,7 +39,7 @@ if (isset($_GET['id'])) {
             <h6>Data Tamu</h6>
         </div>
         <div class="card-body">
-            <form method="post" action="">
+            <form method="post" action="" enctype="multipart/form-data">
                 <input type="hidden" name="id_tamu" id="id_tamu" value="<?= $id_tamu ?>">
                 <div class="form-group row">
                     <label for="nama_tamu" class="col-sm-3 col-form-label">Nama Tamu</label>
@@ -71,6 +71,15 @@ if (isset($_GET['id'])) {
                         <input type="text" class="form-control" id="kepentingan" name="kepentingan" value="<?= $data['kepentingan'] ?>">
                     </div>
                 </div>
+
+                <div class="form-group row">
+                    <label for="gambar" class="col-sm-3 col-form-label">Gambar Foto</label>
+                    <div class="col-sm-8">
+                        <img src="assets/upload_gambar/<?= $data['gambar']; ?>" alt="" width="30%">
+                        <input type="file" class="form-control-file" id="gambar" name="gambar">
+                    </div>
+                </div>
+
                 <div class=" form-grup row">
                     <label for="" class="col-sm-3 col-form-label"></label>
                     <div class="col-sm-8 d-flex justify-content-end">
