@@ -231,7 +231,7 @@ include_once('templates/header.php');
 
                 <div class="modal-body">
 
-                    <form method="post" action="">
+                    <form method="post" action="" enctype="multipart/form-data">
 
                         <input type="hidden" name="id_tamu" id="id_tamu" value="<?= $kodeTamu ?>">
 
@@ -305,7 +305,13 @@ include_once('templates/header.php');
 
                         </div>
 
-
+                        <div class="form-group row">
+                            <label for="gambar" class="col-sm-3 col-form-label">Unggah Foto</label>
+                            <div class="custom-file col-sm-8">
+                                <input type="file" class="custom-file-input" id="gambar" name="gambar">
+                                <label class="custom-file-label" for="gambar">Choose file</label>
+                            </div>
+                        </div>
 
                         <div class="modal-footer">
 
